@@ -9,7 +9,7 @@ function countVowels(word){
    }
     return count
 }
-console.log(countVowels("values"));
+console.log(countVowels("Angeth"));
 
 // Write a function that takes an array of numbers as input and returns the sum of all the numbers.
 function arraySum(arrays){
@@ -34,3 +34,32 @@ function sumGreaterNumber(a,b){
      
 }
 console.log(sumGreaterNumber(50,60));
+
+// Write a function that takes in a array of numbers as a parameter and returns the second largest 
+// number in the array
+
+    let array=[2,9,3,8,5,6,7]
+    array.sort(function(a,b){
+         return b-a
+    })
+    console.log(array[1]);
+    
+
+// Write a function that takes a string as a parameter and returns true if the string is a palindrome and false otherwise
+
+console.log(checkPalindrome("madam"));
+function checkPalindrome(word){
+    const reverseWord=word.split('').reverse().join('');
+    if(word===reverseWord){
+        return true
+    }
+    else{
+        return false
+    }
+
+}
+console.log(checkPalindrome("madam"));
+
+
+
+    
